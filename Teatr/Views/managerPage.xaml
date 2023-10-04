@@ -1,0 +1,125 @@
+﻿<Page x:Class="Teatr.Views.managerPage"
+      Loaded="Page_Loaded"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Teatr.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="managerPage">
+
+    <Page.Resources>
+        <Style x:Key="FocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Rectangle Margin="2" StrokeDashArray="1 2" Stroke="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" SnapsToDevicePixels="true" StrokeThickness="1"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="Button.Static.Background" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
+        <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
+        <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
+        <SolidColorBrush x:Key="Button.Disabled.Background" Color="#FFF4F4F4"/>
+        <SolidColorBrush x:Key="Button.Disabled.Border" Color="#FFADB2B5"/>
+        <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="#FF838383"/>
+        <Style x:Key="RoundedButton" TargetType="{x:Type Button}">
+            <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+            <Setter Property="Background" Value="{StaticResource Button.Static.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Button.Static.Border}"/>
+            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border"  CornerRadius="20" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" SnapsToDevicePixels="true">
+                            <ContentPresenter x:Name="contentPresenter" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsDefaulted" Value="true">
+                                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#EAB01E"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#EAB01E"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="true">
+                                <Setter Property="Background" TargetName="border" Value="#F1CA68"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="#F1CA68"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="false">
+                                <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
+                                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Button.Disabled.Border}"/>
+                                <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Button.Disabled.Foreground}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid Margin="3,-19,-3,19">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/BACK.png"/>
+        </Grid.Background>
+        <Label x:Name="managerLabel" Content="Окно менеджера" HorizontalAlignment="Left" Margin="100,82,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Black" FontFamily="Bahnschrift SemiBold Condensed" Height="32" Width="280" FontSize="24"/>
+
+        <Button x:Name="searchBT" Style="{DynamicResource RoundedButton}"  Content="Поиск" HorizontalAlignment="Left" Margin="10,344,0,0" VerticalAlignment="Top" Height="36" Width="91" Background="#FF36A8FF" FontFamily="Bahnschrift Condensed" FontSize="18" Click="searchTheatre"/>
+        <DataGrid x:Name="HotelGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="313,86,10,136" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="*" Binding="{Binding id}"/>
+                <DataGridTextColumn Header="Название" Width="*" Binding="{Binding hotelname}"/>
+                <DataGridTextColumn Header="Класс" Width="*" Binding="{Binding class}"/>
+                <DataGridTextColumn Header="Срок" Width="*" Binding="{Binding term}"/>
+                <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding status}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="seatchBox" HorizontalAlignment="Left" Margin="21,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69"/>
+        <Button x:Name="refreshBT" Style="{DynamicResource RoundedButton}"  Content="Обновить" HorizontalAlignment="Left" Margin="699,319,0,0" VerticalAlignment="Top" Height="36" Width="91" Background="#FF65FF00" FontFamily="Bahnschrift Condensed" FontSize="18" Click="refreshTeathre"/>
+        <Button x:Name="addBT" Style="{DynamicResource RoundedButton}"  Content="Добавить" HorizontalAlignment="Left" Margin="19,217,0,0" VerticalAlignment="Top" Height="36" Width="90" Background="#FFFF52F0" FontFamily="Bahnschrift Condensed" FontSize="18" Click="addTheatre"/>
+        <TextBox x:Name="dateBox" HorizontalAlignment="Left" Margin="42,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="nameBox" HorizontalAlignment="Left" Margin="42,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="name1" Content="Name" HorizontalAlignment="Left" Margin="2,95,0,0" VerticalAlignment="Top" Height="23"/>
+        <Label x:Name="Class" Content="Class&#xD;&#xA;" HorizontalAlignment="Left" Margin="2,124,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="name" Content="Name" HorizontalAlignment="Left" Margin="21,295,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="idBox" HorizontalAlignment="Left" Margin="42,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="id" Content="id" HorizontalAlignment="Left" Margin="18,62,0,0" VerticalAlignment="Top" Height="23"/>
+        <Button x:Name="deleteBT" Style="{DynamicResource RoundedButton}"  Content="Удалить" HorizontalAlignment="Left" Margin="587,319,0,0" VerticalAlignment="Top" Height="36" Width="91" Background="Red" FontFamily="Bahnschrift Condensed" FontSize="18" Click="deleteTheatre"/>
+        <TextBox x:Name="newName" HorizontalAlignment="Left" Margin="180,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="termBX" HorizontalAlignment="Left" Margin="180,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="editBT" Style="{DynamicResource RoundedButton}"  Content="Редактировать" HorizontalAlignment="Left" Margin="195,334,0,0" VerticalAlignment="Top" Height="36" Width="90" Background="#FF824800" FontFamily="Bahnschrift Condensed" FontSize="18" Click="Edit"/>
+        <Label x:Name="name_Copy" Content="New Name" HorizontalAlignment="Left" Margin="111,231,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="name_Copy1" Content="New Date" HorizontalAlignment="Left" Margin="111,282,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Center" Height="63" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF0A2B4B" Margin="0,-1,0,0"/>
+        <Rectangle HorizontalAlignment="Center" Height="63" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="#FF0A2B4B" Margin="0,387,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="30" Margin="713,404,0,0" VerticalAlignment="Top" Width="29">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Views/instagram-icon 2.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="30" Margin="747,403,0,0" VerticalAlignment="Top" Width="29">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Views/whatsapp-icon 2.png"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="EDEN HOTELS" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="220" HorizontalContentAlignment="Center" FontFamily="Bahnschrift Condensed" Foreground="White" FontSize="40"/>
+        <Label Content="©AliEnterteiment" HorizontalAlignment="Left" Margin="290,401,0,0" VerticalAlignment="Top" Width="262" HorizontalContentAlignment="Center" FontFamily="Edwardian Script ITC" Foreground="White" FontSize="20"/>
+        <TextBox x:Name="Termbx" HorizontalAlignment="Left" Margin="42,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Term" Content="Term" HorizontalAlignment="Left" Margin="2,156,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Statusbx" HorizontalAlignment="Left" Margin="41,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Status" Content="Status" HorizontalAlignment="Left" Margin="1,187,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="classBX" HorizontalAlignment="Left" Margin="180,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="class" Content="Class" HorizontalAlignment="Left" Margin="111,256,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="statusbx" HorizontalAlignment="Left" Margin="180,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="status" Content="Status" HorizontalAlignment="Left" Margin="111,307,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>

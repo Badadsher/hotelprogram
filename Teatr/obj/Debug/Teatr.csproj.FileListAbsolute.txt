@@ -1,0 +1,64 @@
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.csproj.AssemblyReference.cache
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.csproj.SuggestedBindingRedirects.cache
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\MainWindow.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\SignIn.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\App.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr_Content.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr_MarkupCompile.cache
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr_MarkupCompile.lref
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\Teatr.exe.config
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\Teatr.exe
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\Teatr.pdb
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\EntityFramework.dll
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\EntityFramework.xml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\adminPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\MainWindow.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\SignIn.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\adminPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.g.resources
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.Properties.Resources.resources
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.csproj.GenerateResource.cache
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.csproj.CoreCompileInputs.cache
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.csproj.CopyComplete
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.exe
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Teatr.pdb
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\guestPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\managerPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\guestPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\managerPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\registerPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\Teatr\obj\Debug\Views\registerPage.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\Teatr.exe.config
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\Teatr.exe
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\Teatr.pdb
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\EntityFramework.dll
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\EntityFramework.SqlServer.dll
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\EntityFramework.xml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\bin\Debug\EntityFramework.SqlServer.xml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.csproj.AssemblyReference.cache
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\MainWindow.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\adminPage.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\guestPage.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\managerPage.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\registerPage.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\SignIn.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\App.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr_Content.g.cs
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr_MarkupCompile.cache
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr_MarkupCompile.lref
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\MainWindow.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\adminPage.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\guestPage.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\managerPage.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\registerPage.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Views\SignIn.baml
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.g.resources
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.Properties.Resources.resources
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.csproj.GenerateResource.cache
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.csproj.CoreCompileInputs.cache
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.csproj.CopyComplete
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.exe
+E:\vhjvhkgjgk.jkgbljkhjkl\Teatr\obj\Debug\Teatr.pdb
